@@ -1,0 +1,29 @@
+{
+  "name": "legisla-brasil-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site da Legisla Brasil em Next.js, com exportação estática para Vercel, Netlify ou Cloudflare Pages.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "npx serve out",
+    "check:launch": "node scripts/check-launch.mjs",
+    "release": "next build && node scripts/check-launch.mjs"
+  },
+  "dependencies": {
+    "clsx": "2.1.1",
+    "lucide-react": "1.70.0",
+    "motion": "14.10.1",
+    "next": "16.4.5",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "tailwind-merge": "3.7.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.5",
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "tailwindcss": "4.3.5",
+    "typescript": "5.9.3"
+  }
+}
